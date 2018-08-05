@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C973A423211230FC0039E57A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C973A422211230FC0039E57A /* AppDelegate.swift */; };
+		C973A425211230FC0039E57A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C973A424211230FC0039E57A /* Assets.xcassets */; };
+		C973A428211230FC0039E57A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C973A426211230FC0039E57A /* MainMenu.xib */; };
+		C973A432211231160039E57A /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C973A431211231160039E57A /* SpriteKit.framework */; };
+		C973A434211232ED0039E57A /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = C973A433211232ED0039E57A /* water.png */; };
+		C973A436211245D60039E57A /* poolWaterShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C973A435211245D60039E57A /* poolWaterShader.fsh */; };
+		C973A43C2113F4FB0039E57A /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = C973A43B2113F4FB0039E57A /* grid.png */; };
+		C973A43E211400220039E57A /* poolBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C973A43D211400220039E57A /* poolBackground.png */; };
+		C973A440211409020039E57A /* lightburst.png in Resources */ = {isa = PBXBuildFile; fileRef = C973A43F211409020039E57A /* lightburst.png */; };
+		C973A4422114093E0039E57A /* LightSparkle.sks in Resources */ = {isa = PBXBuildFile; fileRef = C973A4412114093E0039E57A /* LightSparkle.sks */; };
+		C973A44421140F4F0039E57A /* spritekitText.png in Resources */ = {isa = PBXBuildFile; fileRef = C973A44321140F4F0039E57A /* spritekitText.png */; };
+		C973A44621140FCA0039E57A /* simpleLiquidShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C973A44521140FCA0039E57A /* simpleLiquidShader.fsh */; };
+		C9A8A59121151FD800B2DFFB /* leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A8A59021151FD800B2DFFB /* leaf.png */; };
+		C9A8A5952115360400B2DFFB /* PoolScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8A5942115360400B2DFFB /* PoolScene.swift */; };
+		C9A8A5972115497300B2DFFB /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8A5962115497300B2DFFB /* UtilityExtensions.swift */; };
+		C9A8A59921162D3F00B2DFFB /* algaeBloomShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C9A8A59821162D3F00B2DFFB /* algaeBloomShader.fsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C973A41F211230FC0039E57A /* SpriteKitShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C973A422211230FC0039E57A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C973A424211230FC0039E57A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C973A427211230FC0039E57A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C973A429211230FC0039E57A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C973A42A211230FC0039E57A /* SpriteKitShaders.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpriteKitShaders.entitlements; sourceTree = "<group>"; };
+		C973A431211231160039E57A /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		C973A433211232ED0039E57A /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
+		C973A435211245D60039E57A /* poolWaterShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = poolWaterShader.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		C973A43B2113F4FB0039E57A /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		C973A43D211400220039E57A /* poolBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poolBackground.png; sourceTree = "<group>"; };
+		C973A43F211409020039E57A /* lightburst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightburst.png; sourceTree = "<group>"; };
+		C973A4412114093E0039E57A /* LightSparkle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LightSparkle.sks; sourceTree = "<group>"; };
+		C973A44321140F4F0039E57A /* spritekitText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spritekitText.png; sourceTree = "<group>"; };
+		C973A44521140FCA0039E57A /* simpleLiquidShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = simpleLiquidShader.fsh; sourceTree = "<group>"; };
+		C9A8A59021151FD800B2DFFB /* leaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf.png; sourceTree = "<group>"; };
+		C9A8A5942115360400B2DFFB /* PoolScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolScene.swift; sourceTree = "<group>"; };
+		C9A8A5962115497300B2DFFB /* UtilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
+		C9A8A59821162D3F00B2DFFB /* algaeBloomShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = algaeBloomShader.fsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C973A41C211230FC0039E57A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C973A432211231160039E57A /* SpriteKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C973A416211230FC0039E57A = {
+			isa = PBXGroup;
+			children = (
+				C973A421211230FC0039E57A /* SpriteKitShaders */,
+				C973A420211230FC0039E57A /* Products */,
+				C973A430211231160039E57A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C973A420211230FC0039E57A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C973A41F211230FC0039E57A /* SpriteKitShaders.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C973A421211230FC0039E57A /* SpriteKitShaders */ = {
+			isa = PBXGroup;
+			children = (
+				C9A8A592211535D000B2DFFB /* Images */,
+				C9A8A593211535E200B2DFFB /* Shaders */,
+				C973A422211230FC0039E57A /* AppDelegate.swift */,
+				C9A8A5942115360400B2DFFB /* PoolScene.swift */,
+				C9A8A5962115497300B2DFFB /* UtilityExtensions.swift */,
+				C973A4412114093E0039E57A /* LightSparkle.sks */,
+				C973A424211230FC0039E57A /* Assets.xcassets */,
+				C973A426211230FC0039E57A /* MainMenu.xib */,
+				C973A429211230FC0039E57A /* Info.plist */,
+				C973A42A211230FC0039E57A /* SpriteKitShaders.entitlements */,
+			);
+			path = SpriteKitShaders;
+			sourceTree = "<group>";
+		};
+		C973A430211231160039E57A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C973A431211231160039E57A /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9A8A592211535D000B2DFFB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C973A44321140F4F0039E57A /* spritekitText.png */,
+				C973A43B2113F4FB0039E57A /* grid.png */,
+				C973A43D211400220039E57A /* poolBackground.png */,
+				C973A43F211409020039E57A /* lightburst.png */,
+				C973A433211232ED0039E57A /* water.png */,
+				C9A8A59021151FD800B2DFFB /* leaf.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C9A8A593211535E200B2DFFB /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				C9A8A59821162D3F00B2DFFB /* algaeBloomShader.fsh */,
+				C973A44521140FCA0039E57A /* simpleLiquidShader.fsh */,
+				C973A435211245D60039E57A /* poolWaterShader.fsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C973A41E211230FC0039E57A /* SpriteKitShaders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C973A42D211230FC0039E57A /* Build configuration list for PBXNativeTarget "SpriteKitShaders" */;
+			buildPhases = (
+				C973A41B211230FC0039E57A /* Sources */,
+				C973A41C211230FC0039E57A /* Frameworks */,
+				C973A41D211230FC0039E57A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpriteKitShaders;
+			productName = SpriteKitShaders;
+			productReference = C973A41F211230FC0039E57A /* SpriteKitShaders.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C973A417211230FC0039E57A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Matt Reagan";
+				TargetAttributes = {
+					C973A41E211230FC0039E57A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C973A41A211230FC0039E57A /* Build configuration list for PBXProject "SpriteKitShaders" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C973A416211230FC0039E57A;
+			productRefGroup = C973A420211230FC0039E57A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C973A41E211230FC0039E57A /* SpriteKitShaders */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C973A41D211230FC0039E57A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C973A434211232ED0039E57A /* water.png in Resources */,
+				C973A440211409020039E57A /* lightburst.png in Resources */,
+				C973A425211230FC0039E57A /* Assets.xcassets in Resources */,
+				C973A428211230FC0039E57A /* MainMenu.xib in Resources */,
+				C973A43E211400220039E57A /* poolBackground.png in Resources */,
+				C9A8A59921162D3F00B2DFFB /* algaeBloomShader.fsh in Resources */,
+				C973A44421140F4F0039E57A /* spritekitText.png in Resources */,
+				C973A436211245D60039E57A /* poolWaterShader.fsh in Resources */,
+				C973A4422114093E0039E57A /* LightSparkle.sks in Resources */,
+				C973A43C2113F4FB0039E57A /* grid.png in Resources */,
+				C973A44621140FCA0039E57A /* simpleLiquidShader.fsh in Resources */,
+				C9A8A59121151FD800B2DFFB /* leaf.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C973A41B211230FC0039E57A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A8A5952115360400B2DFFB /* PoolScene.swift in Sources */,
+				C973A423211230FC0039E57A /* AppDelegate.swift in Sources */,
+				C9A8A5972115497300B2DFFB /* UtilityExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C973A426211230FC0039E57A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C973A427211230FC0039E57A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C973A42B211230FC0039E57A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C973A42C211230FC0039E57A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		C973A42E211230FC0039E57A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpriteKitShaders/SpriteKitShaders.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpriteKitShaders/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Matt-Reagan.SpriteKitShaders";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C973A42F211230FC0039E57A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpriteKitShaders/SpriteKitShaders.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpriteKitShaders/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Matt-Reagan.SpriteKitShaders";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C973A41A211230FC0039E57A /* Build configuration list for PBXProject "SpriteKitShaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C973A42B211230FC0039E57A /* Debug */,
+				C973A42C211230FC0039E57A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C973A42D211230FC0039E57A /* Build configuration list for PBXNativeTarget "SpriteKitShaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C973A42E211230FC0039E57A /* Debug */,
+				C973A42F211230FC0039E57A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C973A417211230FC0039E57A /* Project object */;
+}
